@@ -1,0 +1,7 @@
+C - 3 - 4
+M - 0 - 2
+A - Indiana - 1 - 1 - S - AADADA
+# - Expected result
+# - C - 3 - 4
+# - M - 0 - 2
+# - A - Indiana - 0 - 3 - N - 0

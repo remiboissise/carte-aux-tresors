@@ -1,0 +1,32 @@
+{
+    "name": "carte-aux-tresors",
+    "version": "1.0.0",
+    "description": "La carte aux trésors",
+    "main": "index.js",
+    "scripts": {
+        "dev": "concurrently -k -n \"Typescript,Node\" -p \"[{name}]\" -c \"blue,green\" \"tsc --watch\" \"nodemon dist/index.js\"",
+        "start": "tsc && node dist/index.js --file",
+        "test": "jest --verbose",
+        "test-watch": "jest --verbose --watchAll",
+        "build": "tsc"
+    },
+    "dependencies": {
+        "nexline": "^1.2.0",
+        "yargs": "^15.1.0",
+        "lodash": "^4.17.15"
+    },
+    "devDependencies": {
+        "@types/jest": "^25.1.4",
+        "@types/lodash": "^4.14.149",
+        "@types/node": "^13.9.2",
+        "@types/yargs": "^15.0.4",
+        "concurrently": "^5.1.0",
+        "dts-gen": "^0.6.0",
+        "jest": "^25.1.0",
+        "nodemon": "^2.0.2",
+        "ts-jest": "^25.2.1",
+        "typescript": "^3.8.3"
+    },
+    "author": "remiboissise@gmail.com",
+    "license": "ISC"
+}
